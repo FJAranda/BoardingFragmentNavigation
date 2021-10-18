@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BoardingFragmentNavigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="strConsigueBilletes">¡Consigue tus billetes!</string>
+    <string name="strBtnNext">Next</string>
+    <string name="strFinalizaCompra">¡Finaliza proceso compra!</string>
+    <string name="strBtnVolver">Volver</string>
+    <string name="strBtnComprar">Comprar</string>
+    <string name="strPorFin">¡Por Fin!</string>
+    <string name="strBtnHome">Home</string>
+</resources>

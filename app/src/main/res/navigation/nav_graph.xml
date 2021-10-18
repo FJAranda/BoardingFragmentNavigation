@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/getTicketsFragment">
+
+    <fragment
+        android:id="@+id/getTicketsFragment"
+        android:name="com.example.boardingfragmentnavigation.GetTicketsFragment"
+        android:label="fragment_get_tickets"
+        tools:layout="@layout/fragment_get_tickets" >
+        <action
+            android:id="@+id/action_getTicketsFragment_to_buyTicketsFragment"
+            app:destination="@id/buyTicketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyTicketsFragment"
+        android:name="com.example.boardingfragmentnavigation.BuyTicketsFragment"
+        android:label="fragment_buy_tickets"
+        tools:layout="@layout/fragment_buy_tickets" >
+        <action
+            android:id="@+id/action_buyTicketsFragment_to_endTicketsFragment"
+            app:destination="@id/endTicketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endTicketsFragment"
+        android:name="com.example.boardingfragmentnavigation.EndTicketsFragment"
+        android:label="fragment_end_tickets"
+        tools:layout="@layout/fragment_end_tickets" >
+        <action
+            android:id="@+id/action_endTicketsFragment_to_getTicketsFragment"
+            app:destination="@id/getTicketsFragment" />
+    </fragment>
+</navigation>
